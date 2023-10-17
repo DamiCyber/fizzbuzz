@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="con">
+    <h1>FizzBuzz 👀</h1>
+    <input type="number" id="pad" >
+<button onclick="press()" class="btn">check</button> 
+<div class="me" id="hay"></div>
+</div>
+    
+    <script>
+        function press() {
+            var val = pad.value
+            if (val % 3 == 0 && val % 5 == 0){
+                hay.innerHTML = "FizzBuzz❤" 
+            }
+            if(val % 3 == 0){
+                hay.innerHTML = "Fizz✔"
+            }
+           else if (val % 5 == 0){
+            hay.innerHTML = "Buzz😜"
+           }
+         else{
+           hay.innerHTML = "This is neither fizz nor buzz 😒"
+         }
+        }
+    </script>
+</body>
+</html>
